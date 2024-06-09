@@ -1,0 +1,21 @@
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'styles/meetup.css'%}">
+
+{% endblock %}
+
+{% block main_content %}
+<li class="meetup">
+    <div class="meetup__content">
+      <div class="meetup__place">
+        <img src="{{image}}" alt="{{title}}" />
+      </div>
+      <div class="meetup__description">
+        <h2>{{title}}</h2>
+        <p>{{location}}</p>
+      </div>
+    </div>
+    <a href="{% url 'meetup-detail' slug %}"><button class="btn">More Details</button></a>
+  </li>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Meetup || confirmation
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'styles/confirmation.css' %}">
+{% endblock %}
+
+{% block main_content %}
+<article class="main">
+    <section id="header">
+        <h1>Thanks for signing up!</h1>
+    </section>
+    <section id="confirmation">
+        <h2>You Registered Successfully</h2>
+        <p>Thank you for signing up - see you at the meetup!</p>
+        <p>Got questions or can't make it? Please <a href="mailto:{{ organizer_email }}">contact the organizer</a> ahead of time</p>
+    </section>
+    
+    <section id="continue">
+        <p>of course you can sign up for more than one meetup!</p>
+        <p><a href="{% url 'meetup-list' %}" class="btn">Explore the more</a></p>
+    </section>
+</article>
+
+{% endblock %}

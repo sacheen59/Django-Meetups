@@ -1,0 +1,133 @@
+.meetup-detail__header {
+    text-align: center;
+}
+
+.meetup-detail__header h3 {
+    color: rgba(0, 0, 0, 0.817);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.meetup-detail {
+    max-width: 50rem;
+    max-height: 70rem;
+    height: 50rem;
+    width: 60rem;
+    background-color: white;
+    margin: 8rem auto;
+    border: 5px solid rgb(57, 7, 104);
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+}
+
+#main-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(57, 7, 104);
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#main-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.meetup-detail h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.meetup__location {
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+.meetup__location p {
+    color: rgb(82, 82, 82);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.location-text {
+    color: rgb(57, 7, 104);
+    font-weight: bold;
+}
+
+.meetup__about {
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.meetup__about p {
+    color: rgb(82, 82, 82);
+    font-size: 1.1rem;
+}
+
+.meetup_contact {
+    line-height: 3rem;
+}
+
+.meetup_contact p {
+    color: rgb(82, 82, 82);
+    font-size: 1.1rem;
+}
+
+.contact-text {
+    color: rgb(57, 7, 104);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.not-found {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+    color: rgb(82, 82, 82);
+}
+
+.meetup_contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.meetup_contact label {
+    font-weight: bold;
+    color: #46424d;
+    margin-right: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.meetup_contact input {
+    border: 1px solid rgb(57, 7, 104);
+    font: inherit;
+    background-color: #ebeaee;
+    border-radius: 4px;
+    padding: 0px 0.25rem;
+}
+
+.meetup_contact .errorlist {
+    margin-bottom: 0.5rem;
+    color: #880824;
+}
+
+
+#registration-action button {
+    background-color: rgb(57, 7, 104);
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    margin-top: 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

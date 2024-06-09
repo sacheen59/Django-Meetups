@@ -1,0 +1,15 @@
+.meetups {
+    max-width: 40rem;
+    margin: 5rem auto;
+}
+
+.meetups h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.meetup__list {
+    list-style-type: none;
+    padding: 1rem;
+}
+

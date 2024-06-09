@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Meetups ||
+firstpage {% endblock %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'styles/homepage.css' %}" />
+
+{% endblock %} {% block main_content %}
+<div class="meetup__header">
+  <h3>We got great Meetups coming up!</h3>
+  <p>Find the one that best suits your needs</p>
+</div>
+
+<section class="meetups">
+  <h3>Upcoming Meetups</h3>
+
+  <ol class="meetup__list">
+    {% for meetup in meetups %}
+    {% include "meetups/includes/meetup.html" with title=meetup.title image=meetup.image.url location=meetup.location slug=meetup.slug %}
+    {% endfor %}
+  </ol>
+</section>
+{% endblock %}
